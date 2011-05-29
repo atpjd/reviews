@@ -1,14 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Reviews</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
+<meta name="description" content="Flight school reviews by flight training students." />
+<title>ATP Flight School: Reviews</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="http://static2.atp.cc/css/blueprint/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="http://static2.atp.cc/css/blueprint/print.css" type="text/css" media="print" />		    
+<!--[if lt IE 8]><link rel="stylesheet" href="http://static2.atp.cc/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<%= csrf_meta_tag %>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-216004-1']);
+  _gaq.push(['_setDomainName', '.atpflightschool.com']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackPageLoadTime']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 </head>
 <body>
+<div id="header">
+	<img id="Jet-Header-04" src="http://static1.atp.cc/images-new/jet-header/nationwide_academy.gif" width="537" height="100" alt="Nationwide Flight Academy" />
+	<img id="Jet-Header-01" src="http://static1.atp.cc/images-new/jet-header/engine.png" width="106" height="100" alt="" />
+	<img id="Jet-Header-02" src="http://static1.atp.cc/images-new/jet-header/most_respected.gif" width="423" height="15" alt="The Most Respected Name in Pilot Certification" />
+	<img id="Jet-Header-03" src="http://static1.atp.cc/images-new/jet-header/wing_4.png" width="50" height="100" alt="" />
+	<a href="../index.html"><img id="Jet-Header-07" src="http://static1.atp.cc/images-new/jet-header/atp_logo.gif" width="319" height="64" alt="ATP - Airline Transport Professionals" /></a>
+	<img id="Jet-Header-09" src="http://static1.atp.cc/images-new/jet-header/wing_3.png" width="423" height="21" alt="" />
+	<img id="Jet-Header-10" src="http://static1.atp.cc/images-new/jet-header/wing_1.jpg" width="158" height="51" alt="" />
+	<img id="Jet-Header-11" src="http://static1.atp.cc/images-new/jet-header/wing_2.jpg" width="421" height="51" alt="" />
+	<a href="../contact/index.html"><img id="Jet-Header-13" src="http://static1.atp.cc/images-new/jet-header/800allatps.gif" width="165" height="18" alt="800-ALL-ATPS / 800-255-2877" /></a>
+</div>
+<div class="container">
 
+<!-- InstanceBeginEditable name="usablearea" -->
+<div id="headerlinks">
+<form action="http://www.atpflightschool.com/searchresults.html" id="cse-search-box">
+  <div id="headerlinkssearch">
+    <input type="hidden" name="cx" value="014937393022271832040:sqehhfuzass" />
+    <input type="hidden" name="cof" value="FORID:10;NB:1" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="31" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+<div id="headerlinkscontainer">
+	<a class="" href="../index.html">ATP Flight School</a>
+	<a class="" href="../airline_training_programs/index.html">Airline Training Programs</a>
+	<a class="" href="../international/index.html" title="International Flight Training">International Flight Training</a>
+	<a class="" href="../flight_schools/index.html">Flight Schools</a>
+	<a class="" href="http://www2.atpflightschool.com/AirlinePlacements/">Airline Placements</a>
+	<a class="" href="http://www2.atpflightschool.com/Testimonials/">Testimonials</a>
+	<a class="" href="../equipment/index.html">Aircraft &amp; Equipment</a>
+	<a class="" href="../news/index.html">Latest News</a>
+	<a class="" href="../videos/index.html">Videos</a>
+	<a class="" href="../press/index.html">Press Coverage</a>
+	<a class="" href="../flying/index.html">Real-Time Flight Tracker</a>
+	<a class="" href="../specials/index.html">Specials</a>
+	<a class="" href="../programs/index.html">Program Guide</a>
+	<a class="" href="../faqs/index.html">FAQs</a>
+	<a class="" id="last" href="mailto:info@allatps.com" onclick="_gaq.push(['_trackPageview', '/email/info']);">Email: info@allatps.com</a>
+
+	<div id="headerlinksmoreresources">More Resources</div>
+	<a href="http://www.beanairlinepilot.com" onclick="_gaq.push(['_trackPageview', '/outgoing/beanairlinepilot.com']);">BeAnAirlinePilot.com<br /><span class="sub">Connect with an Airline Pilot</span></a>
+	<a href="http://www.pilotjobs.com" onclick="_gaq.push(['_trackPageview', '/outgoing/pilotjobs.com']);">PilotJobs.com<br /><span class="sub">Regional Airline Hiring</span></a>
+	<a href="http://pilotpool.com" onclick="_gaq.push(['_trackPageview', '/outgoing/pilotpool.com']);">PilotPool.com<br /><span class="sub">Pilot Recruitment for ATP Grads</span></a>
+	</div>
+
+	<div id="anniversary_seal"><img src="http://static1.atp.cc/images/anniversary_seal.gif" alt="Flight Training for Professional Pilots since 1984" width="150" height="125" /></div>
+</div>
+
+<div id="content">
 <%= yield %>
+</div>
 
+</div>
+<div id="footer">
+	<div id="locations">
+		<p>Atlanta (Lawrenceville &amp; PDK) <em>&bull;</em> Bowling Green <em>&bull;</em> Charlotte <em>&bull;</em> Chicago <br />
+		Dallas (Addison &amp; Arlington) <em>&bull;</em> Daytona Beach <em>&bull;</em> Fort Lauderdale <em>&bull;</em> Houston <em>&bull;</em> Indianapolis<br />
+		 Jacksonville <em>&bull;</em> Las Vegas <em>&bull;</em> Long Beach <em>&bull;</em> Nashville <em>&bull;</em> New York <em>&bull;</em> Phoenix (Mesa &amp; Scottsdale)<br />
+		 Raleigh-Durham <em>&bull;</em> Richmond <em>&bull;</em> Riverside <em>&bull;</em> Sacramento <em>&bull;</em> San Diego <em>&bull;</em> Tampa <em>&bull;</em> Trenton</p>
+	</div>
+	<div id="hours">
+		<a href="../flight_schools/index.html" title="ATP Flight Schools"><img src="http://static1.atp.cc/images/Footer/800ALLATPS.gif" alt="800-ALL-ATPS / 800-255-2877" width="251" height="41" /></a><br />
+		Mon-Fri 8am to 9pm; Sat &amp; Sun 8am to 5pm ET
+	</div>
+	<div id="copyright">
+		Updated <!--#config timefmt="%D" --><!--#echo var="LAST_MODIFIED" -->. Copyright &copy; <!--#config timefmt="%Y" --><!--#echo var="DATE_LOCAL" --> ATP. All rights reserved.
+	</div>
+</div>
 </body>
 </html>

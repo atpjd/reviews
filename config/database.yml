@@ -2,14 +2,13 @@ global: &global
   adapter: mysql
   username: root
   password: jess1024
+  database: www
   socket: /tmp/mysql.sock
 
 development:
-  database: testimonial
   <<: *global
 
 test: &test
-  database: testimonial_test
   <<: *global
 
 cucumber:

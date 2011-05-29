@@ -2,12 +2,15 @@
 <html>
 <head>
 <meta name="description" content="Flight school reviews by flight training students." />
+<%= csrf_meta_tag %>
 <title>ATP Flight School: Reviews</title>
 <!-- InstanceEndEditable -->
 <link rel="stylesheet" href="http://static2.atp.cc/css/blueprint/screen.css" type="text/css" media="screen, projection" />
 <link rel="stylesheet" href="http://static2.atp.cc/css/blueprint/print.css" type="text/css" media="print" />		    
 <!--[if lt IE 8]><link rel="stylesheet" href="http://static2.atp.cc/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<%= csrf_meta_tag %>
+<style>
+	body { background: url('http://static1.atp.cc/images-new/backgrounds/ERJ_<%= (1..7).to_a.sample %>.jpg') no-repeat fixed right top ;
+</style>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-216004-1']);
@@ -52,7 +55,7 @@
 	<a class="" href="../international/index.html" title="International Flight Training">International Flight Training</a>
 	<a class="" href="../flight_schools/index.html">Flight Schools</a>
 	<a class="" href="http://www2.atpflightschool.com/AirlinePlacements/">Airline Placements</a>
-	<a class="" href="http://www2.atpflightschool.com/Testimonials/">Testimonials</a>
+	<a class="selected" href="http://www2.atpflightschool.com/Testimonials/">Testimonials</a>
 	<a class="" href="../equipment/index.html">Aircraft &amp; Equipment</a>
 	<a class="" href="../news/index.html">Latest News</a>
 	<a class="" href="../videos/index.html">Videos</a>
@@ -73,7 +76,9 @@
 </div>
 
 <div id="content">
-<%= yield %>
+	<div class="standard_one_column">
+		<%= yield %>
+	</div>
 </div>
 
 </div>

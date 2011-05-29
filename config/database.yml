@@ -1,15 +1,27 @@
 global: &global
   adapter: mysql
-  username: root
-  password: jess1024
   database: www
-  socket: /tmp/mysql.sock
+
+production:
+  <<: *global
+    username: rails
+    password: 2552877
+    host: db3.atp.bz
 
 development:
   <<: *global
+    username: root
+    password: jess1024
+    socket: /tmp/mysql.sock
 
 test: &test
   <<: *global
+    username: root
+    password: jess1024
+    socket: /tmp/mysql.sock
 
 cucumber:
   <<: *test
+    username: root
+    password: jess1024
+    socket: /tmp/mysql.sock

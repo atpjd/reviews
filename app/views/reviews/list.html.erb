@@ -1,16 +1,24 @@
 <h1>Reviews &amp; Testimonials</h1>
 <p>Over the years pilots have written hundreds of letters and emails about their great experiences with ATP. Pilots are consistently impressed with the knowledge, dedication and professionalism of ATP flight instructors, and the quality of ATP aircraft. Please take a moment to find out how others have felt about flying with ATP.</p>
 <table>
-	<thead>
-		<th colspan="3">Month, Year</th>
-	</thead>
 	<tbody>
-		<% @review.each do |r| %>
+		<%
+			count = 0
+			@review.each do |r|
+		%>
+		<% if r.dateReceived.month != @review[count-1].dateReceived.month %>
+		<tr>
+			<th colspan="3"><%= r.dateReceived.strftime("%B %Y") %></th>
+		</tr>
+		<% end %>
 		<tr>
 			<td><%= r.name %></td>
 			<td><%= r.program %></td>
 			<td><%= r.dateReceived %></td>
 		</tr>
-		<% end %>
+		<%
+			count += 1
+			end
+		%>
 	</tbody>
 </table>

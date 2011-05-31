@@ -1,5 +1,5 @@
 global: &global
-    adapter: mysql
+    adapter: mysql2
 
 production:
     host: db3.atp.bz
